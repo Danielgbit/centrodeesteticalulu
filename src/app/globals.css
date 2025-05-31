@@ -25,9 +25,11 @@ body {
   margin: 0;
   padding: 0;
   /* Opcional: Define una altura mínima para el body si quieres que siempre ocupe la pantalla */
+  width: 100%;
   min-height: 100vh; /* Opcional: Esto asegura que el body ocupe al menos toda la altura de la ventana */
   display: flex; /* Opcional: Si tu layout principal va dentro del body y quieres que se expanda */
   flex-direction: column; /* Opcional: Para layouts de "sticky footer" o main content */
+  justify-content: space-between;
 }
 
 /* Puedes añadir estilos para elementos específicos aquí si es necesario (ej. enlaces, botones) */
