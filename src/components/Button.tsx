@@ -2,7 +2,8 @@ const Button = ({ text }: { text: string }) => {
   return (
     <button
       className="
-      button 
+      button-fx
+      bg-[#f9abee] text-[#682d60] 
       rounded-full 
       py-1 
       px-3 

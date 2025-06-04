@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div className="border rounded-lg shadow p-4">
+    <div className="bg-card rounded-lg shadow">
       <Image
         alt={product.name}
         src={product.image}
@@ -10,8 +10,10 @@ const ProductCard = ({ product }: { product: Product }) => {
         height={200}
         className="w-full h-48 object-cover rounded"
       />
-      <h3 className="mt-2 text-xl font-bold">{product.name}</h3>
-      <p className="text-sm">{product.description}</p>
+      <div className="py-2">
+        <h3 className="text-light tracking-text mt-2 text-xl font-bold">{product.name}</h3>
+        <p className="py-2 text-sm text-shadow tracking-text ">{product.description}</p>
+      </div>
     </div>
   );
 };

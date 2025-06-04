@@ -1,10 +1,13 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* src/index.css o src/main.css */
 
-
 :root {
-  --color-primary-light: #f9abee;
-  --color-text-dark: #171717; 
+  --color-primary-light: #f9a9ee;
+  --color-text-dark: #171717;
 }
 
 html {
@@ -20,7 +23,12 @@ html {
 }
 
 body {
-  background-color: var(--color-primary-light); /* Mejor 'background-color' que solo 'background' */
+  background: linear-gradient(
+    90deg,
+    rgba(249, 169, 238, 1) 0%,
+    rgba(189, 74, 173, 1) 50%,
+    rgba(161, 26, 143, 1) 100%
+  );
   color: var(--color-text-dark); /* Mejor 'color' que 'foreground' */
   font-family: var(--font-rubik), sans-serif;
   font-weight: 300; /* Recomiendo 400 (Regular) para texto de cuerpo base */
@@ -34,14 +42,35 @@ body {
   justify-content: space-between;
 }
 
-/* Puedes añadir estilos para elementos específicos aquí si es necesario (ej. enlaces, botones) */
-/* a {
-  text-decoration: none;
-  color: var(--color-text-dark);
-} */
 
-.button {
-  background-color: #f9abee;
-  box-shadow: 1px 2px 10px 0#d14ec0;
-  color: #682d60;
+.text-light{
+  color: #fecaf7;
+}
+
+.text-shadow{
+  color: #3b0935;
+}
+
+.text-title {
+  font-size: 2rem;
+}
+
+.tracking-text {
+  letter-spacing: -0.9px;
+}
+
+.button-fx {
+  box-shadow: 2px 2px 3px 0 #5a0c50;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: #47063f;
+    color: #d972cb;
+    box-shadow: 0.5px 0.5px 3px 0 #fa95ec;
+
+  }
+}
+
+.bg-card {
+  background-color: #ea4dd7;
 }

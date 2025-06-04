@@ -3,25 +3,13 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}", // Para Pages Router
-    "./app/**/*.{js,ts,jsx,tsx,mdx}", // Para App Router (si lo estás usando)
-    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Si tienes una carpeta `src`
+  './pages/**/*.{js,ts,jsx,tsx,mdx}',
+  './components/**/*.{js,ts,jsx,tsx,mdx}',
+  './app/**/*.{js,ts,jsx,tsx,mdx}',
+  './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      colors: {
-        nav: {
-          background: "black",
-        },
-        button: {
-          background: "#f9abee", // bg-button-background
-          shadow: "#d14ec0", // shadow-button-shadow
-          text: "#682d60", // text-button-text
-        },
-        link: {
-          text: 'black'
-        }
-      },
       fontFamily: {
         rubik: ["var(--font-rubik)", "sans-serif"],
       },
