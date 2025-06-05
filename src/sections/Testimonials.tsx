@@ -19,15 +19,15 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-12 px-6 bg-white">
-      <h2 className="text-2xl font-bold mb-8 text-center">
+    <section className="py-12 px-6">
+      <h2 className="text-title tracking-text text-light font-bold mb-20 text-center">
         Lo que dicen nuestras clientas
       </h2>
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {testimonials.map((t, i) => (
-          <div key={i} className="bg-pink-100 p-6 rounded-lg shadow">
-            <p className="text-gray-800 italic">“{t.mensaje}”</p>
-            <p className="mt-4 text-right font-semibold text-pink-700">
+          <div key={i} className="bg-card p-6 rounded-lg shadow">
+            <p className="text-light italic text-sm">“{t.mensaje}”</p>
+            <p className="mt-4 text-right font-semibold text-light">
               - {t.nombre}
             </p>
           </div>
