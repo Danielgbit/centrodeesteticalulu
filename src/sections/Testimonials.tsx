@@ -1,3 +1,6 @@
+'use client'
+
+import { easeInOut, motion } from "framer-motion";
 import React from "react";
 
 const Testimonials = () => {
@@ -18,8 +21,14 @@ const Testimonials = () => {
     },
   ];
 
+
   return (
-    <section id="testimonials" className="py-12 px-6">
+    <motion.section id="testimonials" className="py-12 px-6"
+      initial={{opacity: 0, y: 100}}
+      whileInView={{opacity: 1, y:0}}  
+      transition={{duration: 0.8, ease: easeInOut }}
+      viewport={{once: false, amount: 0.5}}
+    >
       <h2 className="text-title tracking-text text-light font-bold mb-20 text-center">
         Lo que dicen nuestras clientas
       </h2>
@@ -33,7 +42,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

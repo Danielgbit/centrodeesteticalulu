@@ -1,13 +1,26 @@
-import React from 'react'
+"use client";
+
+import { easeInOut, motion } from "framer-motion";
+import React from "react";
 
 const LocationSection = () => {
   return (
-    <section className="py-12 px-6">
-      <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">Dónde estamos y horarios</h2>
+    <motion.section
+      className="py-12 px-6"
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: easeInOut }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
+      <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">
+        Dónde estamos y horarios
+      </h2>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h3 className="text-xl font-semibold mb-5 text-light">Dirección</h3>
-          <p className="mb-4 text-shadow text-sm">Calle Ficticia #123, Ciudad, Colombia</p>
+          <p className="mb-4 text-shadow text-sm">
+            Calle Ficticia #123, Ciudad, Colombia
+          </p>
 
           <h3 className="text-xl text-light font-semibold mb-5">Horarios</h3>
           <ul className="text-shadow text-sm">
@@ -29,8 +42,8 @@ const LocationSection = () => {
           ></iframe>
         </div>
       </div>
-    </section>
-  )
-}
+    </motion.section>
+  );
+};
 
 export default LocationSection;

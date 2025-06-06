@@ -1,6 +1,16 @@
+'use client'
+
+import { easeInOut, motion } from "framer-motion"
+
 const Services = () => {
   return (
-   <section id="services" className="py-12 px-6">
+   <motion.section 
+      id="services" className="py-12 px-6"
+      initial={{opacity: 0, y: -100}}
+      whileInView={{opacity: 1, y:0}}  
+      transition={{duration: 0.8, ease: easeInOut }}
+      viewport={{once: false, amount: 0.5}}
+    >
       <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">Nuestros Servicios</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <div className="text-left mx-30">
@@ -24,7 +34,8 @@ const Services = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
+
   )
 }
 

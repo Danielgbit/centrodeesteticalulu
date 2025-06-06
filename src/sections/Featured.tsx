@@ -12,7 +12,7 @@ const Featured = () => {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: false, amount: 0.1 }} // 👈 Esto hace que se repita
+      viewport={{ once: false, amount: 0.5 }}
       className="pt-24"
     >
       <div className="mb-12">

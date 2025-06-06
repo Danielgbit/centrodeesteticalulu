@@ -1,10 +1,11 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import { Autoplay } from 'swiper/modules';
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
+import { easeInOut, motion } from "framer-motion";
 
 const Gallery = () => {
   const images = [
@@ -17,12 +18,20 @@ const Gallery = () => {
     "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
   ];
 
   return (
-    <section id='gallery' className="py-12 px-6">
-      <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">Nuestro trabajo</h2>
+    <motion.section
+      id="gallery"
+      className="py-12 px-6"
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: easeInOut }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
+      <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">
+        Nuestro trabajo
+      </h2>
       <Swiper
         modules={[Autoplay]}
         loop={true}
@@ -49,7 +58,7 @@ const Gallery = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </motion.section>
   );
 };
 

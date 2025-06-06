@@ -1,4 +1,7 @@
+'use client'
+
 import Button from "@/components/Button";
+import { easeInOut, motion } from "framer-motion";
 import React from "react";
 
 const CallToAction = () => {
@@ -9,7 +12,13 @@ const CallToAction = () => {
   );
 
   return (
-    <section className="text-light text-center py-12 px-4 my-20">
+    <motion.section 
+      className="text-light text-center py-12 px-4 my-20"
+      initial={{opacity: 0, x: -100}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{duration: 0.8, ease: easeInOut}}
+      viewport={{once: false, amount: 0.5}}
+    >
       <h2 className="text-3xl font-bold mb-4">¡Agenda tu cita hoy!</h2>
       <p className="mb-6 max-w-xl mx-auto">
         En Peluquería Bella estamos listas para cuidar de tu cabello y resaltar
@@ -22,7 +31,7 @@ const CallToAction = () => {
       >
         <Button text="Escribenos por whatsapp"/>
       </a>
-    </section>
+    </motion.section>
   );
 };
 
