@@ -13,6 +13,7 @@
 html {
   font-size: 1rem;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Restaura el modelo de caja para todos los elementos, incluyendo pseudo-elementos */
@@ -71,10 +72,24 @@ body {
   }
 }
 
+.link-fx {
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    font-weight: 400;
+    color: #47063f;
+
+  }
+}
+
 .bg-card {
   background-color: #ea4dd7;
 }
 
 .bg-footer {
   background-color: #bb19a8;
+}
+
+.bg-navbar {
+  background-color: #6c226328;
 }

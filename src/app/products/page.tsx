@@ -1,17 +1,18 @@
-import ProductCard from "@/components/ProductCard"
-import products from "@/data/products"
+// src/app/productos/page.tsx
+import products from "@/data/products";
+import ProductCard from "@/components/ProductCard";
 
-const page = () => {
+const ProductosPage = () => {
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-semibold mb-4">Nuestros productos</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {products.map((p) => (
-          <ProductCard key={p.id} product={p}/>
+    <main className="max-w-6xl mx-auto px-4 py-12 my-30">
+      <h1 className="text-title tracking-text font-bold text-center text-light mb-20">Nuestros Productos</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 my-20">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
-    </div>
-  )
-}
+    </main>
+  );
+};
 
-export default page
+export default ProductosPage;

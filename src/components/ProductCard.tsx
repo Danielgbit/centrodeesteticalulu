@@ -11,8 +11,8 @@ const ProductCard = ({ product }: { product: Product }) => {
         className="w-full h-48 object-cover rounded"
       />
       <div className="py-2">
-        <h3 className="text-light tracking-text mt-2 text-xl font-bold">{product.name}</h3>
-        <p className="py-2 text-sm text-shadow tracking-text ">{product.description}</p>
+        <h3 className="text-light text-center tracking-text mt-2 text-xl font-bold">{product.name}</h3>
+        <p className="py-2 text-center text-sm text-shadow tracking-text ">{product.description}</p>
       </div>
     </div>
   );

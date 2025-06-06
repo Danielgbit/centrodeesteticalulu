@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaWhatsapp, FaPhone } from "react-icons/fa";
+import { FaLocationPin  } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -15,8 +16,8 @@ const Footer = () => {
 
         {/* Horarios */}
         <div>
-          <h3 className="font-semibold mb-2 tracking-text">Horarios</h3>
-          <ul className="text-sm space-y-1">
+          <h3 className="font-semibold mb-2 tracking-text text-light">Horarios</h3>
+          <ul className="text-sm space-y-1 text-light">
             <li>Lun - Vie: 9:00 AM – 7:00 PM</li>
             <li>Sábados: 9:00 AM – 5:00 PM</li>
             <li>Domingos: Cerrado</li>
@@ -25,10 +26,10 @@ const Footer = () => {
 
         {/* Contacto */}
         <div>
-          <h3 className="font-semibold mb-2 tracking-text">Contacto</h3>
-          <ul className="text-sm space-y-1">
-            <li>📍 Calle Ficticia #123, Ciudad</li>
-            <li>📞 +57 300 123 4567</li>
+          <h3 id="contact" className="font-semibold mb-2 tracking-text text-light">Contacto</h3>
+          <ul className="text-sm space-y-2 text-light ">
+            <li className="flex gap-3 text-center justify-left aling-center"><FaLocationPin/> Calle 78 C-SUR #46-101</li>
+            <li className="flex gap-3 text-center justify-left aling-center"><FaPhone/> +57 3148280265</li>
             <li>
               <a
                 href="https://wa.me/573148280265"
@@ -36,8 +37,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="underline hover:text-gray-200"
               >
-                <div className="inline-flex gap-3 text-center justify-center aling-center">
-                  <FaWhatsapp/> Escríbenos por WhatsApp
+                <div className="flex gap-3 text-center justify-left aling-center">
+                  <FaWhatsapp className="self-center" /> Escríbenos por WhatsApp
                 </div>
               </a>
             </li>
@@ -46,30 +47,30 @@ const Footer = () => {
 
         {/* Enlaces rápidos */}
         <div>
-          <h3 className="font-semibold mb-2 tracking-text">Enlaces</h3>
-          <ul className="text-sm space-y-1">
+          <h3 className="font-semibold mb-2 tracking-text text-light">Enlaces</h3>
+          <ul className="text-sm space-y-1 text-light">
             <li>
               <Link href="/" className="text-sm tracking-text">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link href="/productos" className="text-sm tracking-text">
+              <Link href="/products" className="text-sm tracking-text">
                 Productos
               </Link>
             </li>
             <li>
-              <Link href="/contacto" className="text-sm tracking-text">
+              <Link href="#contact" className="text-sm tracking-text">
                 Contacto
               </Link>
             </li>
             <li>
-              <a href="#servicios" className="text-sm tracking-text">
+              <a href="#services" className="text-sm tracking-text">
                 Servicios
               </a>
             </li>
             <li>
-              <a href="#galeria" className="text-sm tracking-text">
+              <a href="#gallery" className="text-sm tracking-text">
                 Galería
               </a>
             </li>
@@ -79,16 +80,17 @@ const Footer = () => {
 
       {/* Social + copyright */}
       <div className="mt-10 border-t border-pink-400 pt-6 text-center text-sm flex flex-col sm:flex-row justify-between items-center max-w-6xl mx-auto">
-        <p className="mb-4 sm:mb-0">
-          © {new Date().getFullYear()} Peluquería Bella. Todos los derechos
+        <p className="mb-4 sm:mb-0 text-light text-xs">
+          © {new Date().getFullYear()} Peluquería LULÚ. Todos los derechos
           reservados.
         </p>
         <div className="flex space-x-4 text-xl">
           <a
-            href="https://wa.me/573001234567"
+            href="https://wa.me/573148280265"
             target="_blank"
             aria-label="WhatsApp"
             rel="noopener noreferrer"
+            className="flex aling-center justify-center"
           >
             <FaWhatsapp className="hover:text-gray-200" />
           </a>

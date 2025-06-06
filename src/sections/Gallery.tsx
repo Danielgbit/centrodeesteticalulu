@@ -21,7 +21,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="py-12 px-6">
+    <section id='gallery' className="py-12 px-6">
       <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">Nuestro trabajo</h2>
       <Swiper
         modules={[Autoplay]}
@@ -41,10 +41,10 @@ const Gallery = () => {
           <SwiperSlide key={i}>
             <Image
               src={src}
-              width={10000}
-              height={10000}
+              width={400}
+              height={300}
               alt={`imagen-${i}`}
-              className="w-[800px] h-[400px] object-cover rounded-xl shadow-lg"
+              className="w-full h-[300px] object-cover rounded-xl shadow-lg"
             />
           </SwiperSlide>
         ))}

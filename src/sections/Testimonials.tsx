@@ -19,7 +19,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-12 px-6">
+    <section id="testimonials" className="py-12 px-6">
       <h2 className="text-title tracking-text text-light font-bold mb-20 text-center">
         Lo que dicen nuestras clientas
       </h2>
