@@ -17,16 +17,17 @@ const LocationSection = () => {
       </h2>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h3 className="text-xl font-semibold mb-5 text-light">Dirección</h3>
-          <p className="mb-4 text-shadow text-sm">
-            Calle Ficticia #123, Ciudad, Colombia
+          <h3 className="text-xl font-bold tracking-text mb-5 text-light">Dirección</h3>
+          <p className="mb-4 text-shadow font-normal tracking-text text-sm tracking-text">
+            Calle 78 C-Sur #46-101 - <strong>Sabaneta - Prados de sabaneta</strong>
           </p>
 
-          <h3 className="text-xl text-light font-semibold mb-5">Horarios</h3>
-          <ul className="text-shadow text-sm">
-            <li>Lunes a Viernes: 9:00 AM – 7:00 PM</li>
-            <li>Sábados: 9:00 AM – 5:00 PM</li>
+          <h3 className="text-xl text-light font-bold tracking-text mb-5">Horarios</h3>
+          <ul className="text-shadow text-sm font-normal space-y-2 tracking-text">
+            <li>Lunes a Viernes: 10:00 AM – 7:30 PM</li>
+            <li>Sábados: 10:00 AM – 7:30 PM</li>
             <li>Domingos: Cerrado</li>
+            <li>Festivos: Cerrado</li>
           </ul>
         </div>
 

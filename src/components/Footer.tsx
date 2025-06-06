@@ -18,9 +18,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2 tracking-text text-light">Horarios</h3>
           <ul className="text-sm space-y-1 text-light">
-            <li>Lun - Vie: 9:00 AM – 7:00 PM</li>
-            <li>Sábados: 9:00 AM – 5:00 PM</li>
+            <li>Lun - Vie: 10:00 AM – 7:30 PM</li>
+            <li>Sábados: 10:00 AM – 7:30 PM</li>
             <li>Domingos: Cerrado</li>
+            <li>Festivos: Cerrado</li>
           </ul>
         </div>
 

@@ -7,17 +7,18 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { easeInOut, motion } from "framer-motion";
 
+
 const Gallery = () => {
   const images = [
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1560264641-1b5191cc63e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "/services/img-1.jpg",
+    "/services/img-2.jpg",
+    "/services/img-3.jpg",
+    "/services/img-4.jpg",
+    "/services/img-5.jpg",
+    "/services/img-6.jpg",
+    "/services/img-7.jpg",
+    "/services/img-8.jpg",
+    "/services/img-9.jpg",
   ];
 
   return (
@@ -44,16 +45,17 @@ const Gallery = () => {
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
+        className="w-300 object-cover"
         grabCursor={true}
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
             <Image
               src={src}
-              width={400}
+              width={900}
               height={300}
               alt={`imagen-${i}`}
-              className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+              className="w-full h-[500px] object-cover rounded-xl shadow-lg"
             />
           </SwiperSlide>
         ))}
