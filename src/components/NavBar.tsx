@@ -15,8 +15,8 @@ const NavBar = () => {
       setLastScrollY(currentScrollY);
       console.log(lastScroolY);
     };
-    handleScroll();
-  }, [setLastScrollY]);
+      window.addEventListener("scroll", handleScroll);
+  }, [lastScroolY]);
 
   return (
     <nav className="text-white px-6 py-7 bg-navbar flex justify-between">
