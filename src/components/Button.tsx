@@ -4,7 +4,7 @@ const Button = ({ text }: { text: string }) => {
       className="
       button-fx
       bg-[#f9abee] text-[#682d60] 
-      rounded-full 
+      rounded-[15px]
       py-1 
       px-3 
       font-normal 
@@ -16,7 +16,7 @@ const Button = ({ text }: { text: string }) => {
       shadow-button-shadow 
       text-button-text"
     >
-      <span>{text || ""}</span>
+      <span className="text-sm">{text || ""}</span>
     </button>
   );
 };

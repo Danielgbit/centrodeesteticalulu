@@ -14,7 +14,7 @@ const Services = () => {
       <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">Nuestros Servicios</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <div className="text-left mx-30">
-          <h3 className="text-[28px] tracking-text font-semibold mb-10 text-colorMedium uppercase">Uñas</h3>
+          <h3 className="text-[28px] tracking-text font-semibold mb-10 text-colorMedium uppercase">💅🏻 Uñas</h3>
           <ul className="space-y-4 list-disc text-sm list-inside font-normal text-light tracking-text">
             <li>Press On</li>
             <li>Semi permanente</li>
@@ -24,7 +24,7 @@ const Services = () => {
           </ul>
         </div>
         <div className="text-left mx-30">
-          <h3 className="text-[28px] tracking-text font-semibold mb-10 text-colorMedium uppercase">Cabello</h3>
+          <h3 className="text-[28px] tracking-text font-semibold mb-10 text-colorMedium uppercase">💇‍♀️ Cabello</h3>
           <ul className="space-y-4 list-disc text-sm list-inside font-normal text-light tracking-text">
             <li>Enjuagues</li>
             <li>Tratamientos capilares</li>
