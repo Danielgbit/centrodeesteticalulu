@@ -1,6 +1,5 @@
 'use client'
 
-import { once } from "events";
 import { motion } from "framer-motion";
 
 const Hero = () => {

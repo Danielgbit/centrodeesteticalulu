@@ -12,7 +12,7 @@ const ProductCard = ({ product }: { product: Product }) => {
       />
       <div className="py-2">
         <h3 className="text-light text-center tracking-text mt-2 text-xl font-bold">{product.name}</h3>
-        <p className="py-2 text-center text-sm text-shadow tracking-text ">{product.description}</p>
+        <p className="py-2 text-center text-sm text-colorMedium tracking-text ">{product.description}</p>
       </div>
     </div>
   );

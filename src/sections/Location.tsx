@@ -6,7 +6,7 @@ import React from "react";
 const LocationSection = () => {
   return (
     <motion.section
-      className="py-12 px-6"
+      className="py-20 px-6 bg-dark"
       initial={{ opacity: 0, y: -100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: easeInOut }}
@@ -17,12 +17,12 @@ const LocationSection = () => {
       </h2>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h3 className="text-xl font-bold tracking-text mb-5 text-light">Dirección</h3>
+          <h3 className="text-xl font-bold tracking-text mb-5 text-colorMedium">Dirección</h3>
           <p className="mb-4 text-shadow font-normal tracking-text text-sm tracking-text">
             Calle 78 C-Sur #46-101 - <strong>Sabaneta - Prados de sabaneta</strong>
           </p>
 
-          <h3 className="text-xl text-light font-bold tracking-text mb-5">Horarios</h3>
+          <h3 className="text-xl text-colorMedium font-bold tracking-text mb-5">Horarios</h3>
           <ul className="text-shadow text-sm font-normal space-y-2 tracking-text">
             <li>Lunes a Viernes: 10:00 AM – 7:30 PM</li>
             <li>Sábados: 10:00 AM – 7:30 PM</li>

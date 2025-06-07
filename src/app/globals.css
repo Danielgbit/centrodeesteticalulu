@@ -52,6 +52,10 @@ body {
   color: #3b0935;
 }
 
+.text-colorMedium {
+  color: #ffa3f4;
+}
+
 .text-title {
   font-size: 2rem;
 }
@@ -83,7 +87,7 @@ body {
 }
 
 .bg-card {
-  background-color: #ea4dd7;
+  background-color: #903585;
 }
 
 .bg-footer {
@@ -92,4 +96,8 @@ body {
 
 .bg-navbar {
   background-color: #6c226328;
+}
+
+.bg-dark {
+  background-color: #98318c98;
 }
