@@ -11,12 +11,22 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setLastScrollY(currentScrollY);
-      console.log(lastScroolY);
+        const currentScrollY = window.scrollY;
+        setLastScrollY(currentScrollY);
+
+        if(currentScrollY > lastScroolY && currentScrollY > 50) {
+          setShowNav(false);
+            console.log("setShowNav se ha establecido en:", false); // Mensaje más descriptivo
+        }else {
+          setShowNav(true);
+            console.log("setShowNav se ha establecido en:", true); // Mensaje más descriptivo
+        };
     };
       window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScroolY]);
+
+  
 
   return (
     <nav className="text-white px-6 py-7 bg-navbar flex justify-between">
