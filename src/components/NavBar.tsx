@@ -30,7 +30,7 @@ const NavBar = () => {
   
 
   return (
-    <nav className={clsx('fixed z-50 w-screen px-6 py-7 bg-navbar flex justify-between transition duration-800 ease-in-out',
+    <nav className={clsx('fixed z-50 w-screen px-10 py-7 bg-navbar flex justify-between transition duration-800 ease-in-out',
       {
       'translate-y-[0px]' : showNav,
       'translate-y-[-100px]' : !showNav
