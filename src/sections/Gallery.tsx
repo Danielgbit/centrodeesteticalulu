@@ -45,7 +45,7 @@ const Gallery = () => {
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
-        className="w-300 object-cover"
+        className="w-full object-cover"
         grabCursor={true}
       >
         {images.map((src, i) => (

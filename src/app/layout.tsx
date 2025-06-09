@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { getLocalBusinessSchema, seo } from "@/utils/seo";
 import { Metadata } from "next";
+import Hero from "@/sections/Hero";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -21,10 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
       <head>
@@ -36,9 +34,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${rubik.variable}`}>
+      <body className={`${rubik.variable} w-full overflow-x-hidden`}>
         <NavBar />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
