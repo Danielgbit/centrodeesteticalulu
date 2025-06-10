@@ -50,3 +50,41 @@ export const seo: Metadata = {
     follow: true,
   },
 };
+
+
+export const getLocalBusinessSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  name: "Centro de Estética Lulu",
+  image: "https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app/og-image.jpg",
+  "@id": "https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app",
+  url: "https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app",
+  telephone: "+573148280265",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Calle 78 C-Sur #46-101",
+    addressLocality: "Sabaneta",
+    addressRegion: "Antioquia",
+    postalCode: "055450",
+    addressCountry: "CO",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      opens: "10:00",
+      closes: "19:30",
+    }
+  ],
+  sameAs: [
+    "https://www.instagram.com/lulucentrodeestetica/?hl=es-la",
+    "https://wa.me/573148280265"
+  ]
+});
