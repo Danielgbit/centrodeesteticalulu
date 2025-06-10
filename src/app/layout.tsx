@@ -5,7 +5,6 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { getLocalBusinessSchema, seo } from "@/utils/seo";
 import { Metadata } from "next";
-import Hero from "@/sections/Hero";
 
 const rubik = Rubik({
   variable: "--font-rubik",

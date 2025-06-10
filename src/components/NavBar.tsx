@@ -49,10 +49,9 @@ const NavBar = () => {
         }
       )}
     >
-      {/* Logo */}
-      <a href="/" className="font-bold tracking-text text-xl text-light">
+      <Link href="/" className="font-bold tracking-text text-xl text-light">
         LULÚ
-      </a>
+      </Link>
 
       {/* Desktop menu */}
       <div className="hidden md:flex space-x-6 items-center">
