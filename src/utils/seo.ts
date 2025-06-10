@@ -19,13 +19,13 @@ export const seo = {
     title: 'Centro de Estética Lulu | Belleza en Medellín-Sabaneta',
     description:
       'Expertos en belleza capilar, facial y corporal. Visítanos en Medellin-Sabaneta y vive una experiencia de cuidado total.',
-    url: 'https://tu-dominio.com',
+    url: 'https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app',
     siteName: 'Centro de Estética Lulu',
     locale: 'es_CO',
     type: 'website',
     images: [
       {
-        url: 'https://tu-dominio.com/og-image.jpg', // Imagen que se muestra en WhatsApp/Facebook
+        url: 'https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app/og-image.jpg', // Imagen que se muestra en WhatsApp/Facebook
         width: 1200,
         height: 630,
         alt: 'Centro de Estética Lulu',
@@ -34,10 +34,10 @@ export const seo = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Centro de Estética Lulu | Cuidado Capilar en Medellín-Sabaneta',
+    title: 'Centro de Estética Lulu | Cuidado Capilar en Sabaneta',
     description:
       'Tratamientos para el cabello, rostro y cuerpo en el mejor centro de estética de Medellín-Sabaneta.',
-    images: ['https://tu-dominio.com/og-image.jpg'],
+    images: ['https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://tu-dominio.com',
@@ -53,9 +53,9 @@ export const getLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "BeautySalon",
   name: "Centro de Estética Lulu",
-  image: "https://tu-dominio.com/og-image.jpg",
-  "@id": "https://tu-dominio.com",
-  url: "https://tu-dominio.com",
+  image: "https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app/og-image.jpg",
+  "@id": "https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app",
+  url: "https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app",
   telephone: "+573148280265",
   address: {
     "@type": "PostalAddress",

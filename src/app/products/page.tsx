@@ -10,8 +10,7 @@ const ProductosPage = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-{/*       <span className="text-center">Y mucho mas pregunta por el tuyo!!</span>
- */}    </main>
+    </main>
   );
 };
 
