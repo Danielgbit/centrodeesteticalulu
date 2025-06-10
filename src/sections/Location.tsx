@@ -12,7 +12,7 @@ const LocationSection = () => {
       transition={{ duration: 0.8, ease: easeInOut }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">
+      <h2 className="md:text-title text-[30px] font-bold text-light tracking-text mb-20 text-center">
         Dónde estamos y horarios
       </h2>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">

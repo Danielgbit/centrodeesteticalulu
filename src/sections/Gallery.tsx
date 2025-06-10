@@ -30,7 +30,7 @@ const Gallery = () => {
       transition={{ duration: 0.8, ease: easeInOut }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      <h2 className="text-title text-light tracking-text font-bold mb-20 text-center">
+      <h2 className="md:text-title text-[30px] font-bold text-light tracking-text mb-20 text-center">
         Nuestro trabajo
       </h2>
       <Swiper

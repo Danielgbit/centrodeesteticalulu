@@ -19,8 +19,8 @@ const CallToAction = () => {
       transition={{duration: 0.8, ease: easeInOut}}
       viewport={{once: false, amount: 0.5}}
     >
-      <h2 className="text-3xl font-bold mb-4">¡Agenda tu cita hoy!</h2>
-      <p className="mb-6 max-w-xl mx-auto">
+      <h2 className="font-bold text-light mb-4 md:text-3xl text-[30px]">¡Agenda tu cita hoy!</h2>
+      <p className="mb-6 px-8 max-w-xl mx-auto font-normal">
         En Peluquería Bella estamos listas para cuidar de tu cabello y resaltar
         tu belleza.
       </p>

@@ -11,10 +11,10 @@ const Hero = () => {
       viewport={{ once: false, amount: 0.5 }}
       className="pt-24"
     >
-      <h1 className="my-20 tracking-text text-light text-4xl font-bold mb-4">
+      <h1 className="my-20 tracking-text text-colorMedium md:text-4xl text-[30px] font-bold mb-4">
         Bienvenidos a Lulú
       </h1>
-      <p className="text-light my-10 text-base max-w-xl mx-auto">
+      <p className="text-light my-10 px-8 font-normal text-sm max-w-xl md:text-base mx-auto">
         Expertos en belleza y cuidado capilar. Mira nuestros productos y
         contáctanos para una cita.
       </p>
