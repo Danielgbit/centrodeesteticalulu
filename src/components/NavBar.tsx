@@ -54,7 +54,7 @@ const NavBar = () => {
       </Link>
 
       {/* Desktop menu */}
-      <div className="hidden md:flex space-x-20 items-center ">
+      <div className="hidden md:flex space-x-20 items-center">
         {links.map((link) => (
           <Link
             key={link.href}

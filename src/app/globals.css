@@ -26,8 +26,8 @@ html {
 body {
   background: linear-gradient(
     90deg,
-    rgba(249, 169, 238, 1) 0%,
-    rgba(189, 74, 173, 1) 50%,
+    rgb(240, 122, 224) 0%,
+    rgb(174, 69, 160) 50%,
     rgba(161, 26, 143, 1) 100%
   );
   color: var(--color-text-dark); /* Mejor 'color' que 'foreground' */

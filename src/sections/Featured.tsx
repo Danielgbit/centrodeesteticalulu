@@ -9,8 +9,8 @@ import { easeInOut, motion } from "framer-motion";
 const Featured = () => {
   return (
 <motion.section
-  initial={{ opacity: 0, x: 40 }}
-  whileInView={{ opacity: 1, x: 0 }}
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, ease: easeInOut }}
   viewport={{ once: false, amount: 0.1 }}
   className="pt-24 px-4 my-20"
