@@ -50,7 +50,7 @@ const NavBar = () => {
       )}
     >
       {/* Logo */}
-      <a href="/" className="font-bold text-xl text-light">
+      <a href="/" className="font-bold tracking-text text-xl text-light">
         LULÚ
       </a>
 
@@ -60,7 +60,7 @@ const NavBar = () => {
           <Link
             key={link.href}
             href={link.href}
-            className="text-light text-sm font-medium hover:text-pink-400 transition"
+            className="text-light text-sm font-thin tracking-text link-fx hover:text-pink-400 transition"
           >
             {link.label}
           </Link>
@@ -91,7 +91,7 @@ const NavBar = () => {
               key={link.href}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-light text-base hover:text-pink-400 transition"
+              className="text-light font-thin tracking-text link-fx hover:text-pink-400 transition"
             >
               {link.label}
             </Link>

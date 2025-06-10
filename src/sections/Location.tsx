@@ -18,12 +18,12 @@ const LocationSection = () => {
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h3 className="text-xl font-bold tracking-text mb-5 text-colorMedium">Dirección</h3>
-          <p className="mb-4 text-shadow font-normal tracking-text text-sm tracking-text">
+          <p className="mb-4 text-light font-normal tracking-text text-sm tracking-text">
             Calle 78 C-Sur #46-101 - <strong>Sabaneta - Prados de sabaneta</strong>
           </p>
 
           <h3 className="text-xl text-colorMedium font-bold tracking-text mb-5">Horarios</h3>
-          <ul className="text-shadow text-sm font-normal space-y-2 tracking-text">
+          <ul className="text-light text-sm font-normal space-y-2 tracking-text">
             <li>Lunes a Viernes: 10:00 AM – 7:30 PM</li>
             <li>Sábados: 10:00 AM – 7:30 PM</li>
             <li>Domingos: Cerrado</li>

@@ -9,7 +9,7 @@ const Hero = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: false, amount: 0.5 }}
-      className="pt-24"
+      className="pt-24 my-20"
     >
       <h1 className="my-20 tracking-text text-colorMedium md:text-4xl text-[30px] font-bold mb-4">
         Bienvenidos a Lulú

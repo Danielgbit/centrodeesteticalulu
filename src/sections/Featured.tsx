@@ -13,7 +13,7 @@ const Featured = () => {
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8, ease: easeInOut }}
   viewport={{ once: false, amount: 0.1 }}
-  className="pt-24 px-4"
+  className="pt-24 px-4 my-20"
 >
   <div className="mb-12 text-center">
     <h2 className="text-[30px] md:text-title tracking-text text-light font-semibold mb-4">
