@@ -3,8 +3,8 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { getLocalBusinessSchema, seo } from "@/utils/seo";
 import { Metadata } from "next";
+import { seo } from "@/lib/seo";
 
 const rubik = Rubik({
   variable: "--font-rubik",
