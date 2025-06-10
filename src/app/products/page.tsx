@@ -1,4 +1,3 @@
-// src/app/productos/page.tsx
 import products from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 

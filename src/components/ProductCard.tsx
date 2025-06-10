@@ -1,8 +1,9 @@
+import { Product } from "@/types/Product";
 import Image from "next/image";
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div className="w-[280px] h-[530px] flex flex-col justify-between items-center bg-card rounded-lg shadow">
+    <div className="w-[280px] h-[480px] flex flex-col justify-between items-center bg-card rounded-lg shadow">
       <div className="bg-white w-full">
         <Image
           alt={product.name}
