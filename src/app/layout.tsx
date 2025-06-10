@@ -26,12 +26,6 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <meta charSet="utf-8" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getLocalBusinessSchema()),
-          }}
-        />
       </head>
       <body className={`${rubik.variable} w-full overflow-x-hidden`}>
         <NavBar />
