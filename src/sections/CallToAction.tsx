@@ -6,9 +6,9 @@ import React from "react";
 
 const CallToAction = () => {
     
-  const whatsapp = "573001112233";
+  const whatsapp = "3148280265";
   const mensaje = encodeURIComponent(
-    "Hola, quiero agendar una cita con Peluquería Bella."
+    "Hola, quiero agendar una cita"
   );
 
   return (

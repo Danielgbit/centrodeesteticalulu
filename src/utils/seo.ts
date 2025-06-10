@@ -14,9 +14,9 @@ export const seo = {
     'Lulu estética Medellín',
     'Lulu estética Sabaneta',
   ],
-  metadataBase: new URL('https://tu-dominio.com'), // Reemplaza con tu dominio real
+  metadataBase: new URL('https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app'), // Reemplaza con tu dominio real
   openGraph: {
-    title: 'Centro de Estética Lulu | Belleza en Medellín-Sabaneta',
+    title: 'Centro de Estética Lulu | Belleza en Sabaneta',
     description:
       'Expertos en belleza capilar, facial y corporal. Visítanos en Medellin-Sabaneta y vive una experiencia de cuidado total.',
     url: 'https://web-lulu-hair-salon-next-js-ts-tw-c-gray.vercel.app',
