@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { easeInOut, motion } from "framer-motion";
 
@@ -16,8 +16,7 @@ const Services = () => {
         Nuestros Servicios
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto px-20">
-        {/* Uñas */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-4xl mx-auto px-20">
         <div className="text-left">
           <h3 className="text-xl sm:text-2xl tracking-text font-semibold mb-6 text-colorMedium uppercase">
             💅🏻 Uñas
@@ -27,6 +26,7 @@ const Services = () => {
             <li>Semi permanente</li>
             <li>Tradicional</li>
             <li>Base Rubber</li>
+            <li>Baño de base Rubber</li>
             <li>Acrílicas</li>
           </ul>
         </div>
@@ -42,6 +42,18 @@ const Services = () => {
             <li>Cepillados y alisado</li>
             <li>Keratinas sin formol</li>
             <li>Rayitos o rayos</li>
+          </ul>
+        </div>
+
+        {/* Rostro y Belleza */}
+        <div className="text-left">
+          <h3 className="text-xl sm:text-2xl tracking-text font-semibold mb-6 text-colorMedium uppercase">
+            ✨ Rostro & Belleza
+          </h3>
+          <ul className="space-y-3 list-disc list-inside text-xs sm:text-base font-normal text-light tracking-text">
+            <li>Depilación de cejas</li>
+            <li>Depilación de bozo</li>
+            <li>Pestañas punto a punto</li>
           </ul>
         </div>
       </div>

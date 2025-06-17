@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination  } from "swiper/modules";
 import { easeInOut, motion } from "framer-motion";
 
 
@@ -26,7 +26,7 @@ const Gallery = () => {
       id="gallery"
       className="py-12 px-6"
       initial={{ opacity: 0, y: -100 }}
-      whileInView={{ opacity: 1, y: 0,}}
+      whileInView={{ opacity: 1, y: 0}}
       transition={{ duration: 0.8, ease: easeInOut }}
       viewport={{ once: false, amount: 0.5 }}
     >
@@ -34,7 +34,8 @@ const Gallery = () => {
         Nuestro trabajo
       </h2>
       <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay, Pagination]}  
+        pagination={{ clickable: true}}
         loop={true}
         autoplay={{ delay: 0, disableOnInteraction: false }}
         speed={12000}
