@@ -33,7 +33,7 @@ const LocationSection = () => {
 
         <div className="w-full h-64 md:h-80">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8776842243265!2d-75.6255729264984!3d6.14712592742573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4681607a0bf0e3%3A0x693c3a6c1e15d9b6!2sCentro%20De%20Estetica%20Lulu!5e0!3m2!1ses-419!2sco!4v1749151542944!5m2!1ses-419!2sco" // Pega aquí tu enlace real de Google Maps
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8777239493074!2d-75.622998!3d6.1471206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4681607a0bf0e3%3A0x693c3a6c1e15d9b6!2sCentro%20De%20Estetica%20Lulu!5e0!3m2!1ses-419!2sco!4v1755705305689!5m2!1ses-419!2sco" // Pega aquí tu enlace real de Google Maps
             width="100%"
             height="100%"
             style={{ border: 0 }}
